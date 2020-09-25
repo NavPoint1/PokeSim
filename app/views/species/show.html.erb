@@ -1,0 +1,19 @@
+<%= image_tag @species.image_url, size: "800x560" %>
+<H1><%= @species.name %></H1>
+<h3><%= @species.element.name %></h3>
+
+<br>
+
+<% if @flag == 1 %>
+    <%= link_to "Try to catch", catch_path(@species) %>
+<% elsif @flag == 2 %>
+    <%= link_to "You caught #{@species.name}!", areas_path  %>
+<% elsif @flag == 3 %>
+    <%= link_to "#{@species.name} got away!", areas_path %>
+<% else %>
+    <%= link_to "#{@species.name} broke free! Try again", catch_path(@species) %>
+<% end %>
+
+<br>
+
+<%= link_to "Leave", areas_path %>

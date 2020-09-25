@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  area_id: 1
+  element_id: 1
+  capture_rate: 1
+  flee_rate: 1
+  rarity: 1
+  image_url: MyString
+
+two:
+  name: MyString
+  area_id: 1
+  element_id: 1
+  capture_rate: 1
+  flee_rate: 1
+  rarity: 1
+  image_url: MyString

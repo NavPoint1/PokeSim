@@ -1,0 +1,18 @@
+<H1><%= @element.name %></H1>
+
+<h4>Effective against:</h4>
+
+<br>
+
+<h4>Found in:</h4>
+
+<ul>
+    <% @element.areas.each do |area| %>
+        <li>
+            <%= area.name %>
+        </li>
+    <% end %>
+</ul>
+
+<br>
+<h4>Used by <%= @element.species.count %> pokemon.</h4>

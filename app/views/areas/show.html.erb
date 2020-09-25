@@ -1,0 +1,26 @@
+<H1><%= @area.name %></H1>
+
+<h2>Types:</h2>
+
+<ul>
+    <% @area.elements.uniq.each do |element| %>
+        <li>
+            <%= link_to element.name, element_path(element), target: "_blank" %>
+        </li>
+    <% end %>
+</ul>
+
+<%= image_tag @area.image_url, size: "400x280" %>
+
+<br>
+
+<p>
+    <% if @area.encounter_trigger %>
+        A wild <%= link_to @species.name, species_path(@species) %> appears!
+    <% else %>
+        <%= @area.description %>
+    <% end %>
+</p>
+<br>
+
+<%= link_to "Leave", areas_path %>
