@@ -9,6 +9,8 @@
 Element.destroy_all
 Area.destroy_all
 Species.destroy_all
+Trainer.destroy_all
+Poke.destroy_all
 
 
 ###### Types ######
@@ -113,7 +115,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    image_url: ""
+    image_url: "https://i.imgur.com/g4JFNHP.png"
 )
 
 ### Town ###
@@ -124,7 +126,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 6,
-    image_url: ""
+    image_url: "https://i.imgur.com/mEzjYsC.jpg"
 )
 
 Species.create(
@@ -134,7 +136,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 10,
-    image_url: ""
+    image_url: "https://i.imgur.com/AkEraZp.gif"
 )
 
 Species.create(
@@ -144,7 +146,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    image_url: ""
+    image_url: "https://i.imgur.com/kuMEO4n.jpg"
 )
 
 Species.create(
@@ -154,7 +156,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    image_url: ""
+    image_url: "https://i.imgur.com/rgY43Hx.jpg"
 )
 
 ### Volcano ###
@@ -165,7 +167,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 8,
-    image_url: ""
+    image_url: "https://i.imgur.com/kvIAtkD.png"
 )
 
 Species.create(
@@ -175,7 +177,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    image_url: ""
+    image_url: "https://i.imgur.com/RuX7t6s.jpg"
 )
 
 ### Power Plant ###
@@ -186,7 +188,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 4,
-    image_url: ""
+    image_url: "https://i.imgur.com/jYqRRNE.jpg"
 )
 
 Species.create(
@@ -196,7 +198,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 6,
-    image_url: ""
+    image_url: "https://i.imgur.com/0DNK1Hx.jpg"
 )
 
 ### Jungle ###
@@ -207,7 +209,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 5,
-    image_url: ""
+    image_url: "https://i.imgur.com/nnYz0oD.png"
 )
 
 Species.create(
@@ -217,7 +219,7 @@ Species.create(
     capture_rate: 15,
     flee_rate: FLEE_RATE,
     rarity: 5,
-    image_url: ""
+    image_url: "https://i.imgur.com/rdCg7Mw.jpg"
 )
 
 ### Graveyard ###
@@ -228,7 +230,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 8,
-    image_url: ""
+    image_url: "https://i.imgur.com/YyHzC9z.jpg"
 )
 
 Species.create(
@@ -238,18 +240,18 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    image_url: ""
+    image_url: "https://i.imgur.com/vtFEoCv.jpg"
 )
 
 ### Cave ###
 Species.create(
-    name: "Onyx",
+    name: "Onix",
     area: cave,
     element: rock,
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 8,
-    image_url: ""
+    image_url: "https://i.imgur.com/Lu2lVrY.jpg"
 )
 
 Species.create(
@@ -259,7 +261,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 20,
-    image_url: ""
+    image_url: "https://i.imgur.com/ccRADWb.jpg"
 )
 
 Species.create(
@@ -269,7 +271,7 @@ Species.create(
     capture_rate: 15,
     flee_rate: FLEE_RATE,
     rarity: 1,
-    image_url: ""
+    image_url: "https://i.imgur.com/YrES11t.jpg"
 )
 
 ### Laboratory ###
@@ -280,7 +282,7 @@ Species.create(
     capture_rate: 10,
     flee_rate: 5,
     rarity: 5,
-    image_url: ""
+    image_url: "https://i.imgur.com/JCgRahs.jpg"
 )
 
 Species.create(
@@ -290,5 +292,25 @@ Species.create(
     capture_rate: 10,
     flee_rate: 5,
     rarity: 5,
+    image_url: "https://i.imgur.com/fevNnIp.jpg"
+)
+
+Species.create(
+    name: "Charizard",
+    element: fire, 
     image_url: ""
 )
+
+Species.create(
+    name: "Blastoise", 
+    element: water, 
+    image_url: ""
+)
+
+Species.create(
+    name: "Venusaur", 
+    element: grass, 
+    image_url: ""
+)
+
+

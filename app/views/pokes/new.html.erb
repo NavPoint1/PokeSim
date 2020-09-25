@@ -1,0 +1,7 @@
+select your starter
+
+<%= form_for(@poke) do |f|%>
+<%=f.label :choose_starter%>
+<%=f.collection_select(:species_id, @starters, :id, :name)%>
+<%=f.submit "Choose your starter"%>
+<%end%>

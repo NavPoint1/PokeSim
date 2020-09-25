@@ -1,6 +1,8 @@
 class Species < ApplicationRecord
-    belongs_to :area
+    belongs_to :area, required: false
     belongs_to :element
+    has_many :pokes
+    has_many :trainers, through: :pokes
 
     def catch_trigger
         rng = rand(1..100)
