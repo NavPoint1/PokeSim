@@ -2,10 +2,25 @@
 
 <p>Oak : Hello there! Welcome to the world of POKEMON! My name is OAK! People call me the POKEMON PROF!</p>
 <p>This world is inhabited by creatures called POKEMON! For some people, POKEMON are pets. Others use them for fights. </p>
-<p>Myself...I study POKEMON as a profession. First, what is your name? </p>
+<p>Myself...I study POKEMON as a profession.</p>
+
+<br>
+
+<p>First, what is your name? </p>
 <%= form_for(@trainer) do |f|%>
 <%= f.text_field :name%>
 <br>
+<%= f.label :password, "Password:" %>
+<br>
+<%= f.password_field :password %>
 <br>
 <%= f.submit "Next"%>
 <%end%>
+
+<% if @trainer.errors %>
+<ul>
+    <% @trainer.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+    <% end %>
+</ul>
+<% end %>

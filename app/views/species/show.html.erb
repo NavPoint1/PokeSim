@@ -4,16 +4,23 @@
 
 <br>
 
-<% if @flag == 1 %>
-    <%= link_to "Try to catch", catch_path(@species) %>
-<% elsif @flag == 2 %>
-    <%= link_to "You caught #{@species.name}!", areas_path  %>
-<% elsif @flag == 3 %>
-    <%= link_to "#{@species.name} got away!", areas_path %>
+<% if !current_user.species.include?(@species) %>
+    <% if @flag == 1 %>
+        <%= link_to "Try to catch", catch_path(@species) %>
+    <% elsif @flag == 2 %>
+        <%= button_to "You caught #{@species.name}!", caught_path(@species) %>
+    <% elsif @flag == 3 %>
+        <%= link_to "#{@species.name} got away!", areas_path %>
+    <% else %>
+        <%= link_to "#{@species.name} broke free! Try again", catch_path(@species) %>
+    <% end %>
+
+    <br>
+    
+    <% if @flag != 2 %>
+        <%= link_to "Leave", areas_path %>
+    <% end %>
 <% else %>
-    <%= link_to "#{@species.name} broke free! Try again", catch_path(@species) %>
+    <p>You already have this Pokemon!!!!!</p>
+    <%= link_to "Leave", areas_path %>
 <% end %>
-
-<br>
-
-<%= link_to "Leave", areas_path %>

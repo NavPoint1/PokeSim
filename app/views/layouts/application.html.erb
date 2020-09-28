@@ -9,6 +9,11 @@
   </head>
 
   <body>
+    <% if logged_in? %>
+      Hello, <%= current_user_name %>!
+      <%= button_to "Profile", trainer_path(current_user), method: "get" %>
+      <%= button_to "Logout", logout_path, method: "get" %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

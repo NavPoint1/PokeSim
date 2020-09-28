@@ -1,4 +1,25 @@
+<%= image_tag "https://i.imgur.com/pPhbQF4.png", size: "200x250" %>
 <h1>Trainer Name: <%= @trainer.name%></h1>
 
 
-Pokemon
+My Pokemon:
+
+    <% @trainer.pokes.each do |poke| %>
+        <div>
+        <%= image_tag poke.species.image_url, size: "50x50" %> <%= poke.name %> - <%= poke.element %>
+        </div>
+    <% end %>
+
+
+<br>
+
+<p><%= button_to "Explore!", areas_path, method: "get" %></p>
+
+<br>
+
+<p><%= @trainer.collected %>/<%= Species.all.size %> Pokemon collected</p>
+<H1>
+        <% if @trainer.pokemon_master? %>
+            YOU ARE A POKEMON MASTER!
+        <% end %>
+</H1>

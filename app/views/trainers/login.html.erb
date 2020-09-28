@@ -1,0 +1,19 @@
+<h1>Login</h1>
+
+<h6><%= flash.now[:message] %></h6>
+
+<p>First, what is your name? </p>
+<%= form_tag login_path do %>
+    <%= label_tag :name %>
+    <%= text_field_tag :name %>
+    <br>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+    <br>
+    <%= submit_tag "Login" %>
+<% end %>
+
+
+<br>
+
+<h6>Don't have an account? <%= link_to "Get Started!", home_path %></h6>

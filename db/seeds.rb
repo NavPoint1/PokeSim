@@ -295,22 +295,24 @@ Species.create(
     image_url: "https://i.imgur.com/fevNnIp.jpg"
 )
 
+### Starters ###
+
 Species.create(
     name: "Charizard",
     element: fire, 
-    image_url: ""
+    image_url: "https://i.imgur.com/9KwoOIr.jpg"
 )
 
 Species.create(
     name: "Blastoise", 
     element: water, 
-    image_url: ""
+    image_url: "https://i.imgur.com/ydSZSv0.jpg"
 )
 
 Species.create(
     name: "Venusaur", 
     element: grass, 
-    image_url: ""
+    image_url: "https://i.imgur.com/AJ0S1zn.jpg"
 )
 
 
