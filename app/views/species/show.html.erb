@@ -1,26 +1,34 @@
-<%= image_tag @species.image_url, size: "400x400" %>
-<H1><%= @species.name %></H1>
-<h3><%= @species.element.name %></h3>
+<% if flash[:encounter] == @species.name || session[:continue] %>
 
-<br>
-
-<% if !current_user.species.include?(@species) %>
-    <% if @flag == 1 %>
-        <%= link_to "Try to catch", catch_path(@species) %>
-    <% elsif @flag == 2 %>
-        <%= button_to "You caught #{@species.name}!", caught_path(@species) %>
-    <% elsif @flag == 3 %>
-        <%= link_to "#{@species.name} got away!", areas_path %>
-    <% else %>
-        <%= link_to "#{@species.name} broke free! Try again", catch_path(@species) %>
-    <% end %>
+    <%= image_tag @species.image_url, size: "400x400" %>
+    <H1><%= @species.name %></H1>
+    <h3><%= @species.element.name %></h3>
 
     <br>
+
+    <% session[:continue] = false %>
     
-    <% if @flag != 2 %>
+    <% if !current_user.species.include?(@species) %>
+    <% if @flag == 1 %>
+            <% session[:continue] = true %>
+            <%= link_to "Try to catch", catch_path(@species) %>
+        <% elsif @flag == 2 %>
+            <%= button_to "You caught #{@species.name}!", caught_path(@species) %>
+        <% elsif @flag == 3 %>
+            <%= link_to "#{@species.name} got away!", areas_path %>
+        <% else %>
+            <% session[:continue] = true %>
+            <%= link_to "#{@species.name} broke free! Try again", catch_path(@species) %>
+        <% end %>
+
+        <br>
+        
+        <% if @flag != 2 %>
+            <%= link_to "Leave", areas_path %>
+        <% end %>
+    <% else %>
+        <p>You already have this Pokemon!!!!!</p>
         <%= link_to "Leave", areas_path %>
     <% end %>
-<% else %>
-    <p>You already have this Pokemon!!!!!</p>
-    <%= link_to "Leave", areas_path %>
+
 <% end %>
