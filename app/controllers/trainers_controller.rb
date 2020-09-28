@@ -23,6 +23,24 @@ class TrainersController < ApplicationController
         end
     end
 
+    def party
+        @trainer = current_user
+        ids = params[:trainer][:poke_ids]
+        party_count = 0
+        @trainer.pokes.each do |poke|
+            
+            if ids.include?(poke.id.to_s) && party_count < 6
+                poke.in_party = true
+                party_count += 1
+            else
+                poke.in_party = false
+            end 
+            poke.save
+         end
+            redirect_to trainer_path(current_user)
+    end
+
+
     def login
         @trainer = Trainer.new
     end

@@ -306,13 +306,13 @@ Species.create(
 Species.create(
     name: "Blastoise", 
     element: water, 
-    image_url: "https://i.imgur.com/ydSZSv0.jpg"
+    image_url: "https://i.imgur.com/AJ0S1zn.jpg"
 )
 
 Species.create(
     name: "Venusaur", 
     element: grass, 
-    image_url: "https://i.imgur.com/AJ0S1zn.jpg"
+    image_url: "https://i.imgur.com/ydSZSv0.jpg"
 )
 
 

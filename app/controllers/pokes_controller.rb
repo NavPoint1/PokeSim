@@ -20,7 +20,7 @@ class PokesController < ApplicationController
         @poke = Poke.create(
             species_id: params[:id], 
             trainer: current_user,
-            in_party: true
+            in_party: false
         )
         
         redirect_to trainer_path(current_user) 

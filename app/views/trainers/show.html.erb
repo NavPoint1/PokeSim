@@ -2,13 +2,29 @@
 <h1>Trainer Name: <%= @trainer.name%></h1>
 
 
-My Pokemon:
+My Pokemon:                   -------  Party (limit:6)
 
-    <% @trainer.pokes.each do |poke| %>
-        <div>
-        <%= image_tag poke.species.image_url, size: "50x50" %> <%= poke.name %> - <%= poke.element %>
-        </div>
-    <% end %>
+
+
+
+    
+<%= form_tag trainer_path(current_user) do%>
+<%= collection_check_boxes(:trainer, :poke_ids, @trainer.pokes, :id, :name) do |poke| %>
+    <div>
+    <br>
+        <%= image_tag poke.object.species.image_url, size: "50x50" %> <%= poke.label %> - <%= poke.object.element %>
+        
+        <%=  poke.check_box({checked: poke.object.in_party}) %>
+    </div>
+<%end%>
+<br>
+<br>
+    <%= submit_tag "choose party members!" %>
+<%end%>
+
+ 
+
+
 
 
 <br>

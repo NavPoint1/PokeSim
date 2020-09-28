@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :pokes, only: [:show, :new, :create]
   resources :trainers, only: [:index, :show, :new, :create]
+  post "/trainers/:id", to: "trainers#party", as: "party"
   resources :elements, only: [:show]
   resources :species, only: [:show]
   resources :areas, only: [:show, :index]
