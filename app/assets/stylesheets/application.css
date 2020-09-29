@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ .myButton {
+     display: inline;
+ }
+
+ .menu_buttons {
+     float: right;
+ }

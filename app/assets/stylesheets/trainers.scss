@@ -1,3 +1,34 @@
 // Place all the styles related to the Trainers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.pokemon_display {
+    color: rgb(61, 10, 77);
+    background-color: goldenrod;
+    border: 5px outset black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 8px;
+    padding-right: 200px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.pitcher {
+    vertical-align: -19px;
+}
+
+.pitcher_text {
+    position: absolute;
+    font-size: 18px;
+}
+
+.pitcher_check_box {
+    vertical-align: -11px;
+}
+
+.party_disclaimer {
+    padding-left: 65px;
+}
+
+

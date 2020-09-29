@@ -1,37 +1,34 @@
 <%= image_tag "https://i.imgur.com/pPhbQF4.png", size: "200x250" %>
 <h1>Trainer Name: <%= @trainer.name%></h1>
 
+<p><%= button_to "Explore!", areas_path, method: "get" %></p>
 
-My Pokemon:                   -------  Party (limit:6)
-
-
-
-
-    
+<br>
+My Pokemon: <span class="party_disclaimer">Party (limit: 6)</span>
+   
 <%= form_tag trainer_path(current_user) do%>
 <%= collection_check_boxes(:trainer, :poke_ids, @trainer.pokes, :id, :name) do |poke| %>
-    <div>
     <br>
-        <%= image_tag poke.object.species.image_url, size: "50x50" %> <%= poke.label %> - <%= poke.object.element %>
-        
-        <%=  poke.check_box({checked: poke.object.in_party}) %>
-    </div>
+    <span class="pokemon_display">
+        <span class="pitcher">
+            <%= image_tag poke.object.species.image_url, size: "50x50" %>
+        </span>
+        <span class="pitcher_text">
+             <%= poke.label %> - <%= poke.object.element %>
+        </span>
+        <span class="pitcher_check_box">
+            <%=  poke.check_box({checked: poke.object.in_party}) %>
+        </span>
+    </span>
+    <br>
 <%end%>
 <br>
 <br>
     <%= submit_tag "choose party members!" %>
 <%end%>
 
- 
-
-
-
-
 <br>
 
-<p><%= button_to "Explore!", areas_path, method: "get" %></p>
-
-<br>
 
 <p><%= @trainer.collected %>/<%= Species.all.size %> Pokemon collected</p>
 <H1>
