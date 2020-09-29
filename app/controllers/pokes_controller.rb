@@ -17,9 +17,10 @@ class PokesController < ApplicationController
 
     def catch
         # how to use strong params for this?
+    
         @poke = Poke.create(
             species_id: params[:id], 
-            trainer: current_user,
+            trainer_id: current_user.id,
             in_party: false
         )
         

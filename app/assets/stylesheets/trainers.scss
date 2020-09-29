@@ -3,10 +3,16 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 
+
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 1.5rem;
+}
+
 .pokemon_display {
-    color: rgb(61, 10, 77);
-    background-color: goldenrod;
-    border: 5px outset black;
+    color: rgb(12, 25, 97);
+    background-color: rgba(115, 194, 246, 0.931);
+    border: 5px outset rgb(0, 0, 0);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 8px;
     padding-right: 200px;
@@ -31,4 +37,32 @@
     padding-left: 65px;
 }
 
+.profile {
+    display: inline;
+}
+
+#trainer_name {
+    font-size: 3.5rem;
+}
+
+#trainer_display {
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+
+}
+#explore_button {
+    float: right;
+    margin-top: -220px;
+    
+}
+
+#area_banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
 

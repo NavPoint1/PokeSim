@@ -11,7 +11,7 @@
   <body>
     <% if logged_in? %>
 
-      <span class="menu_buttons"
+      <span class="menu_buttons">
         <%= button_to "Profile", trainer_path(current_user), method: "get", form_class: "myButton" %>
         <%= button_to "Logout", logout_path, method: "get", form_class: "myButton" %>
       </span>

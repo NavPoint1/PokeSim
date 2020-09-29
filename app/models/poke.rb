@@ -2,7 +2,7 @@ class Poke < ApplicationRecord
     belongs_to :trainer
     belongs_to :species
     has_one :element, through: :species
-    validates :species_id, uniqueness: true
+    validates :species_id, uniqueness: {scope: :trainer_id}
     
     def name
         self.species.name

@@ -1,7 +1,21 @@
-<%= image_tag "https://i.imgur.com/pPhbQF4.png", size: "200x250" %>
-<h1>Trainer Name: <%= @trainer.name%></h1>
 
-<p><%= button_to "Explore!", areas_path, method: "get" %></p>
+
+<div class="profile">
+    <span id="trainer_name">
+        Trainer Name: <%= @trainer.name%>
+    </span>
+    <span id="trainer_display"><%= image_tag "https://i.imgur.com/pPhbQF4.png", size: "200x250" %>
+        
+    </span>
+    <span id="explore_button">
+         <%= link_to image_tag('https://i.imgur.com/UYS7IAD.png'), areas_path %> <br> Explore!
+    </span>
+</div>
+
+
+
+
+
 
 <br>
 My Pokemon: <span class="party_disclaimer">Party (limit: 6)</span>
