@@ -1,27 +1,34 @@
 <H1><%= @area.name %></H1>
+<%= image_tag @area.image_url, size: "400x280" %>
 
 <h2>Types:</h2>
 
 <ul>
     <% @area.elements.uniq.each do |element| %>
-        <li>
+        <li class="area-type-list">
             <%= link_to element.name, element_path(element), target: "_blank" %>
         </li>
     <% end %>
 </ul>
 
-<%= image_tag @area.image_url, size: "400x280" %>
-
-<br>
-
 <p>
     <% if @area.encounter_trigger %>
         <% flash[:encounter] = @species.name %>
-        A wild <%= link_to @species.name, species_path(@species) %> appears!
+
+        <div id="encounter-block">
+        <div class="ui center aligned grid animated list">
+        <div class="item">
+            <div class=""><%= link_to image_tag(@species.image_url, size: "400x400"), species_path(@species) %></div>
+            <div class="content">
+            <div class="header"><%= link_to "A wild #{@species.name} has appeared!", species_path(@species) %></div>
+        </div>
+        </div>
+    </div>    
+
     <% else %>
         <%= @area.description %>
     <% end %>
 </p>
 <br>
 
-<%= link_to "Leave", areas_path %>
+<div id="area-show-leave"><%= link_to "Leave", areas_path %></div>

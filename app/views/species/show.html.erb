@@ -1,6 +1,6 @@
 <% if flash[:encounter] == @species.name || session[:continue] %>
 
-    <%= image_tag @species.image_url, size: "400x400" %>
+    <div class="ui image"><%= image_tag @species.image_url, size: "400x400" %></div>
     <H1><%= @species.name %></H1>
     <h3><%= @species.element.name %></h3>
 

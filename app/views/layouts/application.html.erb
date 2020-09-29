@@ -5,15 +5,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css%22%3E">
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
+
 
   <body>
     <% if logged_in? %>
 
       <span class="menu_buttons">
-        <%= button_to "Profile", trainer_path(current_user), method: "get", form_class: "myButton" %>
-        <%= button_to "Logout", logout_path, method: "get", form_class: "myButton" %>
+        <%= link_to "Profile", trainer_path(current_user), class: "ui inverted blue button" %>
+        <%= link_to "Logout", logout_path, class: "ui inverted red button" %>
       </span>
 
     <% end %>

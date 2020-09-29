@@ -1,3 +1,46 @@
 // Place all the styles related to the Areas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+#area_index {
+    font-size: 1.5rem;
+}
+
+.area-index-li {
+    padding: 12px;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+#area-under-pic-text {
+    text-align: center;
+}
+
+#area-index-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-left: 200px;
+}
+
+.area-type-list {
+    // display: inline; /* the default for span */
+    // width: 100px;
+    // height: 100px;
+    // padding: 5px;
+    // border: 1px solid blue;
+    // background-color: yellow; 
+    font-size: 1.5rem;
+    padding: 5px; 
+}
+
+#encounter-block {
+    margin-top: -400px;
+}
+
+#area-show-leave {
+    bottom: 0;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    position: fixed;
+}
