@@ -24,29 +24,34 @@
 
  .menu_buttons {
      float: right;
+     padding-top: 1px;
  }
 
 
   /* unvisited link */
 a:link {
-    color: blue;
+    color: rgb(74, 185, 230);
     text-decoration: none;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
   }
   
   /* visited link */
   a:visited {
-    color: blue;
+    color: rgb(74, 185, 230);
     text-decoration: none;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
   }
   
   /* mouse over link */
   a:hover {
-    color: red;
+    color: rgb(219, 42, 42);
     text-decoration: none;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
   }
   
   /* selected link */
   a:active {
-    color: red;
+    color: rgb(219, 42, 42);
     text-decoration: none;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
   } 

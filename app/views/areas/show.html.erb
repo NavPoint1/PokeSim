@@ -4,13 +4,13 @@
 
     <div id="area_show_types">
        <div id="area_type_word">
-            Types:
+            Types
         </div>
    
         <ul>
             <% @area.elements.uniq.each do |element| %>
                 <li class="area-type-list">
-                    <%= link_to element.name, element_path(element), target: "_blank" %>
+                    <%= link_to element.name, element_path(element), target: "_blank", class: "ui blue big button" %>
                 </li>
             <% end %>
         </ul>
@@ -38,5 +38,5 @@
     </p>
     <br>
 
-    <div id="area-show-leave"><%= link_to "Leave", areas_path %></div>
+    <div class="leave-button"><%= link_to "Leave", areas_path, class: "ui grey massive button" %></div>
 </div>

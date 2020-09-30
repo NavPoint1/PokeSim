@@ -8,7 +8,8 @@
         
     </span>
     <span id="explore_button">
-         <%= link_to image_tag('https://i.imgur.com/UYS7IAD.png'), areas_path %> <br> Explore!
+        Explore!<br>
+        <%= link_to image_tag('https://i.imgur.com/UYS7IAD.png', size: "300x300"), areas_path %> <br>
     </span>
 </div>
 
@@ -18,33 +19,40 @@
 
 
 <br>
-My Pokemon: <span class="party_disclaimer">Party (limit: 6)</span>
+<div id="trainer-show-pokemon-list">
+My Pokemon<span class="party_disclaimer">Party (limit: 6)</span>
    
-<%= form_tag trainer_path(current_user) do%>
-<%= collection_check_boxes(:trainer, :poke_ids, @trainer.pokes, :id, :name) do |poke| %>
-    <br>
-    <span class="pokemon_display">
-        <span class="pitcher">
-            <%= image_tag poke.object.species.image_url, size: "50x50" %>
-        </span>
-        <span class="pitcher_text">
-             <%= poke.label %> - <%= poke.object.element %>
-        </span>
-        <span class="pitcher_check_box">
-            <%=  poke.check_box({checked: poke.object.in_party}) %>
-        </span>
-    </span>
-    <br>
-<%end%>
-<br>
-<br>
-    <%= submit_tag "Select party members!" %>
-<%end%>
+    <%= form_tag trainer_path(current_user) do%>
+            <%= collection_check_boxes(:trainer, :poke_ids, @trainer.pokes, :id, :name) do |poke| %>
+                    <br>
+                    <span class="pokemon_display">
+                        <span class="pitcher">
+                            <%= image_tag poke.object.species.image_url, size: "50x50" %>
+                        </span>
+                        <span class="pitcher_text">
+                            <%= poke.label %> - <%= poke.object.element %>
+                        </span>
+                        <span class="pitcher_check_box">
+                            <%=  poke.check_box({checked: poke.object.in_party}) %>
+                        </span>
+                    </span>
+                    <br>
+            <%end%>
+        <br>
+        <br>
+        <%= submit_tag "Select party members!" %>
+    <%end%>
+</div>
 
 <br>
 
 
-<p><%= @trainer.collected %>/<%= Species.all.size %> Pokemon collected</p>
+<p class="pokemon-count"><%= @trainer.collected %>/<%= Species.all.size %> Pokemon</p>
+<br>
+<br>
+<br>
+<br>
+<p class="pokemon-count">in your collection!</p>
 <H1>
         <% if @trainer.pokemon_master? %>
             YOU ARE A POKEMON MASTER!

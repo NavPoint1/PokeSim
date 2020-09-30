@@ -1,23 +1,30 @@
-<H2 id="area-index-title">All Areas</H2>
+<!-- <div id="areas-prompt">Where would you like to go?</div> -->
 
 <div id="area_index">
 <div id="area_banner">
-<%= image_tag 'https://i.imgur.com/yugrgd7.jpg', size: "1800x400" %>
+<div class="wrapper">
+      <div class="clip-text clip-text_one">Where would you like to go?</div>
+  </div>
+<!-- <%= image_tag 'https://i.imgur.com/yugrgd7.jpg', size: "1800x400" %> -->
 </div>
 <div id="area-under-pic-text">
-<h1>Where would you like to go?</h1>
-<ul>
-    <% @areas.each do |area| %>
-        <li class="area-index-li">
-            <div class="ui middle aligned animated list">
-                <div class="item">
-                    <img class="ui avatar image" src=<%= area.image_url %>>
-                    <div class="content">
-                    <div class="header"><%= link_to area.name, area_path(area) %></div>
-                </div>
-            </div>            
-        </li>
-    <% end %>
-</ul>
+    <ul>
+        <div class="ui grid">
+        <% @areas.each do |area| %>
+            <div class="four wide column">
+                    <li class="area-index-li">
+                        <div class="ui middle aligned animated list">
+                            <div class="item">
+                                <img class="ui avatar image" src=<%= area.image_url %>>
+                                <div class="content">
+                                    <div class="header" id="area-index-link-text"><%= link_to area.name, area_path(area) %></div>
+                                </div>
+                            </div>            
+                        </div>
+                    </li>
+                    </div>
+                <% end %>
+        </div>
+    </ul>
 </div>
-</div>
+

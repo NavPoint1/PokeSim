@@ -18,6 +18,12 @@ body {
     padding-right: 200px;
     padding-top: 19px;
     padding-bottom: 19px;
+
+
+}
+
+#trainer-show-pokemon-list {
+    margin-left: 36%;
 }
 
 .pitcher {
@@ -34,7 +40,7 @@ body {
 }
 
 .party_disclaimer {
-    padding-left: 65px;
+    padding-left: 110px;
 }
 
 .profile {
@@ -58,7 +64,7 @@ body {
 #explore_button {
     float: right;
     margin-top: -220px;
-    
+    margin-right: 5%;
 }
 
 #area_banner {
@@ -68,3 +74,11 @@ body {
     width: 95%;
 }
 
+.pokemon-count {
+    float: left;
+    color: rgb(74, 185, 230);
+    font-size: 4rem;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    margin-top: -300px;
+    margin-left: 3%;
+}
