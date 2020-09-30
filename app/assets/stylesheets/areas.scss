@@ -1,6 +1,60 @@
 // Place all the styles related to the Areas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.area_show {
+    
+    height: 100% ;
+}
+
+.Town {
+    background: url('https://i.imgur.com/PgysLy6.png') center no-repeat; 
+    background-size: cover;
+}
+
+.Volcano {
+    background: url('https://i.imgur.com/8BlibOo.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Beach {
+    background: url('https://i.imgur.com/SLHfCe3.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Power {
+    background: url('https://i.imgur.com/iMSJ4PB.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Jungle {
+    background: url('https://i.imgur.com/MR2SEGW.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Graveyard {
+    background: url('https://i.imgur.com/UN3Gr51.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Cave {
+    background: url('https://i.imgur.com/XoutaoK.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Laboratory {
+    background: url('https://i.imgur.com/P5VoD5X.png') center no-repeat; 
+    background-size: cover;
+}
+
+#area_name {
+    margin-left: 10%;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+
 
 #area_index {
     font-size: 1.5rem;
@@ -22,6 +76,38 @@
     margin-left: 200px;
 }
 
+
+
+#encounter-block {
+    bottom: 0;
+    margin-left: 40%;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    position: fixed;
+}
+
+
+#area-show-leave {
+    bottom: 0;
+    left: 0;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 2rem;
+    position: fixed;
+}
+
+#area_description {
+     text-align: center;
+     font-size: 3rem;
+     color: white;
+     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#area_type_word {
+    margin-bottom: -10px;
+    font-size: 3rem;
+}
+
 .area-type-list {
     // display: inline; /* the default for span */
     // width: 100px;
@@ -29,18 +115,17 @@
     // padding: 5px;
     // border: 1px solid blue;
     // background-color: yellow; 
+    
     font-size: 1.5rem;
-    padding: 5px; 
+    padding: 5px;
 }
 
-#encounter-block {
-    margin-top: -400px;
-}
-
-#area-show-leave {
-    bottom: 0;
-    margin-left: 35px;
-    margin-bottom: 50px;
-    font-size: 2rem;
+#area_show_types {
     position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 5%;
+    font-size: 3rem;
+     color: white;
+     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
