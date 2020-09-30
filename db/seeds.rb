@@ -105,7 +105,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 8,
-    image_url: "https://i.imgur.com/ylhjtLK.jpg"
+    image_url: 'wartortle.png'
 )
 
 Species.create(
@@ -126,7 +126,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 6,
-    image_url: "https://i.imgur.com/mEzjYsC.jpg"
+    image_url: "eevee.png"
 )
 
 Species.create(
@@ -136,7 +136,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 10,
-    image_url: "https://i.imgur.com/AkEraZp.gif"
+    image_url: "pidgey.png"
 )
 
 Species.create(
@@ -146,7 +146,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    image_url: "https://i.imgur.com/kuMEO4n.jpg"
+    image_url: "mr._mime.png"
 )
 
 Species.create(
@@ -156,7 +156,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    image_url: "https://i.imgur.com/rgY43Hx.jpg"
+    image_url: "machamp.png"
 )
 
 ### Volcano ###
@@ -167,7 +167,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 8,
-    image_url: "https://i.imgur.com/kvIAtkD.png"
+    image_url: "magmar.png"
 )
 
 Species.create(
@@ -177,7 +177,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    image_url: "https://i.imgur.com/RuX7t6s.jpg"
+    image_url: "golem.png"
 )
 
 ### Power Plant ###
@@ -188,7 +188,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 4,
-    image_url: "https://i.imgur.com/jYqRRNE.jpg"
+    image_url: "pikachu.png"
 )
 
 Species.create(
@@ -198,7 +198,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 6,
-    image_url: "https://i.imgur.com/0DNK1Hx.jpg"
+    image_url: "koffing.png"
 )
 
 ### Jungle ###
@@ -209,7 +209,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 5,
-    image_url: "https://i.imgur.com/nnYz0oD.png"
+    image_url: "bellsprout.png"
 )
 
 Species.create(
@@ -219,7 +219,7 @@ Species.create(
     capture_rate: 15,
     flee_rate: FLEE_RATE,
     rarity: 5,
-    image_url: "https://i.imgur.com/rdCg7Mw.jpg"
+    image_url: "scyther.png"
 )
 
 ### Graveyard ###
@@ -230,7 +230,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 8,
-    image_url: "https://i.imgur.com/YyHzC9z.jpg"
+    image_url: "haunter.png"
 )
 
 Species.create(
@@ -240,7 +240,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    image_url: "https://i.imgur.com/vtFEoCv.jpg"
+    image_url: "gengar.png"
 )
 
 ### Cave ###
@@ -251,7 +251,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 8,
-    image_url: "https://i.imgur.com/Lu2lVrY.jpg"
+    image_url: "onix.png"
 )
 
 Species.create(
@@ -261,7 +261,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 20,
-    image_url: "https://i.imgur.com/ccRADWb.jpg"
+    image_url: "zubat.png"
 )
 
 Species.create(
@@ -271,7 +271,7 @@ Species.create(
     capture_rate: 15,
     flee_rate: FLEE_RATE,
     rarity: 1,
-    image_url: "https://i.imgur.com/YrES11t.jpg"
+    image_url: "dragonite.png"
 )
 
 ### Laboratory ###
@@ -282,7 +282,7 @@ Species.create(
     capture_rate: 10,
     flee_rate: 5,
     rarity: 5,
-    image_url: "https://i.imgur.com/JCgRahs.jpg"
+    image_url: "mew.png"
 )
 
 Species.create(
@@ -292,7 +292,7 @@ Species.create(
     capture_rate: 10,
     flee_rate: 5,
     rarity: 5,
-    image_url: "https://i.imgur.com/fevNnIp.jpg"
+    image_url: "mewtwo.png"
 )
 
 ### Starters ###
@@ -300,19 +300,19 @@ Species.create(
 Species.create(
     name: "Charizard",
     element: fire, 
-    image_url: "https://i.imgur.com/9KwoOIr.jpg"
+    image_url: "charizard.png"
 )
 
 Species.create(
     name: "Blastoise", 
     element: water, 
-    image_url: "https://i.imgur.com/AJ0S1zn.jpg"
+    image_url: "blastoise.png"
 )
 
 Species.create(
     name: "Venusaur", 
     element: grass, 
-    image_url: "https://i.imgur.com/ydSZSv0.jpg"
+    image_url: "venusaur.png"
 )
 
 
