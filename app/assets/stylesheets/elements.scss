@@ -1,3 +1,42 @@
 // Place all the styles related to the Elements controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.type-show-page {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.type-show-page::before {
+    content: "";
+    background: url('https://citzim.co.zw/wp-content/uploads/2018/12/680424_light-blue-background-images-for-websites-hd_800x600_h.jpg') center no-repeat; 
+    background-size: cover; 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.type-show-page > * {
+    // display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-show-text {
+    font-size: 2rem;
+    // list-style-type: none;
+    padding: 1%;
+}
+
+.type-show-title {
+    font-size: 9rem;
+    margin-top: 3%;
+    margin-bottom: 8%;
+}

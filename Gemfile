@@ -5,6 +5,7 @@ ruby '2.6.1'
 
 gem 'semantic-ui-rails'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
+gem 'animate.css-rails', '~> 3.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'

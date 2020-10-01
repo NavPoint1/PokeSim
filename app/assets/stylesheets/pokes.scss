@@ -1,3 +1,56 @@
 // Place all the styles related to the Pokes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.pokes-new {
+    // height: 100%;
+    // width: 100%;
+    margin: 0 auto;
+
+    
+}
+
+.pokes-new::before {
+    content: "";
+    background: url('https://cdn.discordapp.com/attachments/750517524680147015/761342023328333824/1475570246771.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 60%;
+    // height: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#pokes-new-title {
+    font-size: 8rem;
+    padding-top: 3%;
+    text-shadow: -1px 0 navy, 0 1px navy, 1px 0 navy, 0 -1px navy;
+    color: rgb(1, 66, 151);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+
+    text-align: center;
+
+    margin-left: 2px;
+    margin-top: 2px;
+
+    height: 150px;
+    width: 1080px;
+    border: thick double rgb(4, 1, 46);
+    border-radius: 25px;
+    background-color: rgba(57, 121, 146, 0.4);
+}
+
+.pokes-new-text {
+    text-align: center;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 56%;
+    left: 61%;
+}

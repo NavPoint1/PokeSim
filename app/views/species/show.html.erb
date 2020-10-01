@@ -2,7 +2,7 @@
 
     <div class="species-show-page">
 
-        <div class="species-sprite"><%= image_tag @species.image_url, size: "600x600", class: "ui image" %></div>
+        <div class="species-sprite"><%= image_tag @species.image_url, size: "600x600", class: "ui image animated myElement #{@animation} slow" %></div>
         
         <div id="species-text">
             <div id="species-name"><%= @species.name %></div>
@@ -18,7 +18,7 @@
                             <%= link_to image_tag("pokeball.png", size: "125x125"), catch_path(@species) %>
                             <div class="battle-text">Try to catch it!</div>
                         <% elsif @flag == 2 %>
-                            <%= button_to "You caught #{@species.name}!", caught_path(@species), class: "massive ui inverted blue button" %>
+                            <%= button_to "You caught #{@species.name}!", caught_path(@species), class: "massive ui inverted red button" %>
                         <% elsif @flag == 3 %>
                             <%= link_to "#{@species.name} got away!", areas_path, class: "massive ui inverted red button" %>
                         <% else %>

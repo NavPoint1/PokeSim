@@ -29,23 +29,29 @@
 }
 
 .trainer-show-page {
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
     margin: 0 auto;
-    overflow: hidden;
+
+    
 }
 
 .trainer-show-page::before {
     content: "";
-    background: url('http://www.fogmaster.com/images/bg12_watercolor_bg.jpg') center no-repeat; 
+    background: url('http://www.fogmaster.com/images/bg12_watercolor_bg.jpg') no-repeat center center fixed;
     background-size: cover; 
     position: absolute;
     top: 0px;
     right: 0px;
-    bottom: 0px;
+    bottom: -600px;
     left: 0px;
     z-index: -1;
     opacity: 100%;
+    // height: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .oak-pic {

@@ -1,7 +1,12 @@
-select your starter
+<div class="pokes-new">
 
-<%= form_for(@poke) do |f|%>
-<%=f.label :choose_starter%>
-<%=f.collection_select(:species_id, @starters, :id, :name)%>
-<%=f.submit "Choose your starter"%>
-<%end%>
+    <div id="pokes-new-title"> Select your starter</div>
+
+    <div class="pokes-new-text">
+        <%= form_for(@poke) do |f|%>
+        <%=f.collection_select(:species_id, @starters, :id, :name)%>
+        <%=f.submit "Choose Pokemon"%>
+        <%end%>
+    </div>
+
+</div>

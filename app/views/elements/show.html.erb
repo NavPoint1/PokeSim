@@ -1,18 +1,16 @@
-<H1><%= @element.name %></H1>
+<div class="type-show-page">
 
-<h4>Effective against:</h4>
+    <div class="type-show-title"><%= @element.name %></div>
 
-<br>
+    <div class="type-show-text">Found in:</div>
 
-<h4>Found in:</h4>
+    <ul>
+        <% @element.areas.each do |area| %>
+            <li class="type-show-text">
+                <%= area.name %>
+            </li>
+        <% end %>
+    </ul>
+    <div class="type-show-text">Used by <%= @element.species.count %> pokemon.</div>
 
-<ul>
-    <% @element.areas.each do |area| %>
-        <li>
-            <%= area.name %>
-        </li>
-    <% end %>
-</ul>
-
-<br>
-<h4>Used by <%= @element.species.count %> pokemon.</h4>
+</div>
