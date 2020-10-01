@@ -3,9 +3,133 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .new-trainer {
     height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.new-trainer::before {
+    content: "";
     background: url('https://images6.alphacoders.com/658/thumb-1920-658596.jpg') center no-repeat; 
     background-size: cover; 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
     opacity: 50%;
+}
+
+.new-trainer > * {
+    // display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.trainer-show-page {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.trainer-show-page::before {
+    content: "";
+    background: url('http://www.fogmaster.com/images/bg12_watercolor_bg.jpg') center no-repeat; 
+    background-size: cover; 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 100%;
+}
+
+.oak-pic {
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+#first-what-is-your-name {
+    margin-bottom: 2px;
+}
+
+#new-password-label {
+    margin-bottom: -8px;
+    margin-top: 8px;
+}
+
+#new-trainer-errors {
+    float: right;
+    margin-right: 18%;
+    margin-top: -1.8%;
+}
+
+#new-trainer-form {
+    font-size: 2rem;
+    color: rgb(1, 46, 1);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.new-trainer-text {
+    font-size: 2rem;
+    color: rgb(1, 46, 1);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    display: block;
+    margin: auto;
+    height: 280px;
+    width: 1200px;
+    border: thick double rgb(1, 46, 1);
+    border-radius: 25px;
+    background-color: rgba(43, 94, 43, 0.25);
+}
+
+.home-page-text {
+    font-size: 2rem;
+    color: rgb(1, 46, 1);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    display: block;
+    margin: auto;
+    height: 170px;
+    width: 900px;
+    border: thick double rgb(1, 46, 1);
+    border-radius: 25px;
+    background-color: rgba(43, 94, 43, 0.25);
+}
+
+.home-pic {
+    display: block;
+    margin: auto;
+    margin-top: -2%;
+}
+
+#home-title {
+    font-size: 6rem;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    padding-top: 5%;
+}
+
+#begin-journey-button {
+    text-align: center;
+}
+
+#login-title {
+    font-size: 6rem;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    padding-top: 5%;
+    margin-bottom: 1px;
+}
+
+#login-form {
+    margin-top: 12%;
+    font-size: 2rem;
+    color: rgb(1, 46, 1);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 body {
@@ -50,10 +174,12 @@ body {
     display: inline;
 }
 
-#trainer_name {
-    font-size: 3.5rem;
+.trainer_name {
+    font-size: 4rem;
     display: inline-block;
     margin: 50px;
+    text-shadow: -2px 0 black, 0 2px black, 1.5px 0 black, 0 -1.5px black;
+    color: white;
 }
 
 #trainer_display {
@@ -68,6 +194,21 @@ body {
     float: right;
     margin-top: -220px;
     margin-right: 5%;
+    background: url('https://i.imgur.com/UYS7IAD.png') center no-repeat;
+    background-size: 300px 300px;
+    font-size: 3rem;
+    width: 300px;
+    height: 300px;
+}
+
+#explore-button-text {
+    margin-top: 0px;
+}
+
+#pokemon-roster-text {
+    font-size: 2rem;
+    color: rgb(74, 185, 230);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #area_banner {
@@ -81,7 +222,7 @@ body {
     float: left;
     color: rgb(74, 185, 230);
     font-size: 4rem;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow: -2px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
     margin-top: -300px;
-    margin-left: 3%;
+    margin-left: 8%;
 }

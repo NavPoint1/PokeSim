@@ -1,19 +1,24 @@
-<h1>Login</h1>
+<div class="new-trainer">
+    
+    <div id="login-title">Login</div>
 
-<h6><%= flash.now[:message] %></h6>
+    <div id="login-form">
+        <p>First, what is your name? </p>
+        <%= form_tag login_path do %>
+            <%= label_tag :name %>
+            <%= text_field_tag :name %>
+            <br>
+            <%= label_tag :password %>
+            <%= password_field_tag :password %>
+            <br>
+            <%= submit_tag "Login" %>
+        <% end %>
+    
 
-<p>First, what is your name? </p>
-<%= form_tag login_path do %>
-    <%= label_tag :name %>
-    <%= text_field_tag :name %>
+
     <br>
-    <%= label_tag :password %>
-    <%= password_field_tag :password %>
-    <br>
-    <%= submit_tag "Login" %>
-<% end %>
 
+    <div>Don't have an account? <%= link_to "Get Started!", home_path %></div>
+    </div>
 
-<br>
-
-<h6>Don't have an account? <%= link_to "Get Started!", home_path %></h6>
+</div>

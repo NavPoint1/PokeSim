@@ -1,15 +1,15 @@
-
+<div class="trainer-show-page">
 
 <div class="profile">
-    <span id="trainer_name">
+    <span class="trainer_name">
         Trainer Name: <%= @trainer.name%>
     </span>
     <span id="trainer_display"><%= image_tag "https://i.imgur.com/pPhbQF4.png", size: "200x250" %>
         
     </span>
     <span id="explore_button">
-        Explore!<br>
-        <%= link_to image_tag('https://i.imgur.com/UYS7IAD.png', size: "300x300"), areas_path %> <br>
+        <div id="explore-button-text"><%= link_to "Explore!", areas_path, class: "ui massive orange button" %></div>
+        <!-- <%= link_to image_tag('https://i.imgur.com/UYS7IAD.png', size: "300x300"), areas_path %> <br> -->
     </span>
 </div>
 
@@ -20,7 +20,7 @@
 
 <br>
 <div id="trainer-show-pokemon-list">
-My Pokemon<span class="party_disclaimer">Party (limit: 6)</span>
+    <div id="pokemon-roster-text">My Pokemon<span class="party_disclaimer">Party (limit: 6)</span></div>
    
     <%= form_tag trainer_path(current_user) do%>
             <%= collection_check_boxes(:trainer, :poke_ids, @trainer.pokes, :id, :name) do |poke| %>
@@ -58,3 +58,5 @@ My Pokemon<span class="party_disclaimer">Party (limit: 6)</span>
             YOU ARE A POKEMON MASTER!
         <% end %>
 </H1>
+
+</div>
