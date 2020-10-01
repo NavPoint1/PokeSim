@@ -1,5 +1,5 @@
 class AreasController < ApplicationController
-
+    before_action :authorized
     def index
         @areas = Area.all
     end

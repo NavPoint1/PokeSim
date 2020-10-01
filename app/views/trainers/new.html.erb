@@ -1,26 +1,29 @@
-<%= image_tag 'https://i.imgur.com/OQavlR3.png', size: "200x200" %>
 
-<p>Oak : Hello there! Welcome to the world of POKEMON! My name is OAK! People call me the POKEMON PROF!</p>
-<p>This world is inhabited by creatures called POKEMON! For some people, POKEMON are pets. Others use them for fights. </p>
-<p>Myself...I study POKEMON as a profession.</p>
+<div class="new-trainer">
+</div>
+    <%= image_tag 'https://i.imgur.com/OQavlR3.png', size: "200x200" %>
 
-<br>
+    <p>Oak : Hello there! Welcome to the world of POKEMON! My name is OAK! People call me the POKEMON PROF!</p>
+    <p>This world is inhabited by creatures called POKEMON! For some people, POKEMON are pets. Others use them for fights. </p>
+    <p>Myself...I study POKEMON as a profession.</p>
 
-<p>First, what is your name? </p>
-<%= form_for(@trainer) do |f|%>
-<%= f.text_field :name%>
-<br>
-<%= f.label :password, "Password:" %>
-<br>
-<%= f.password_field :password %>
-<br>
-<%= f.submit "Next"%>
-<%end%>
+    <br>
 
-<% if @trainer.errors %>
-<ul>
-    <% @trainer.errors.full_messages.each do |error| %>
-        <li><%= error %></li>
+    <p>First, what is your name? </p>
+    <%= form_for(@trainer) do |f|%>
+    <%= f.text_field :name%>
+    <br>
+    <%= f.label :password, "Password:" %>
+    <br>
+    <%= f.password_field :password %>
+    <br>
+    <%= f.submit "Next"%>
+    <%end%>
+
+    <% if @trainer.errors %>
+    <ul>
+        <% @trainer.errors.full_messages.each do |error| %>
+            <li><%= error %></li>
+        <% end %>
+    </ul>
     <% end %>
-</ul>
-<% end %>

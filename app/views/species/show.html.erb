@@ -1,39 +1,40 @@
 <% if flash[:encounter] == @species.name || session[:continue] %>
 
 <div class="species-sprite"><%= image_tag @species.image_url, size: "600x600", class: "ui image" %></div>
+   
 <div id="species-text">
-    <H1><%= @species.name %></H1>
-    <h3><%= @species.element.name %></h3>
-
-    <br>
-
-    <% session[:continue] = false %>
-    
-        <% if !current_user.species.include?(@species) %>
-            <% if @flag == 1 %>
-                <% session[:continue] = true %>
-                <%= link_to image_tag("pokeball.png", size: "100x100"), catch_path(@species) %>
-                Try to catch it!
-            <% elsif @flag == 2 %>
-                <%= button_to "You caught #{@species.name}!", caught_path(@species) %>
-            <% elsif @flag == 3 %>
-                <%= link_to "#{@species.name} got away!", areas_path %>
-            <% else %>
-                <% session[:continue] = true %>
-                <%= link_to "#{@species.name} broke free! Try again", catch_path(@species) %>
-            <% end %>
-
-            <br>
-            
-            <% if @flag != 2 %>
-                <div class="leave-button"><%= link_to "Leave", areas_path, class: "ui grey massive button"  %></div>
-            <% end %>
-        <% else %>
-            <p>You already have this Pokemon!!!!!</p>
-            <div class="leave-button"><%= link_to "Leave", areas_path, class: "ui grey massive button"  %></div>
-        <% end %>
+    <div id="species-name"><%= @species.name %></div>
+<div id="species-type"><%= @species.element.name %></div>
 </div>
 
+<div class="species-battle-options">
+        <% session[:continue] = false %>
+        
+            <% if !current_user.species.include?(@species) %>
+                <% if @flag == 1 %>
+                    <% session[:continue] = true %>
+                    <%= link_to image_tag("pokeball.png", size: "125x125"), catch_path(@species) %>
+                    <div class="battle-text">Try to catch it!</div>
+                <% elsif @flag == 2 %>
+                    <%= button_to "You caught #{@species.name}!", caught_path(@species), class: "massive ui inverted blue button" %>
+                <% elsif @flag == 3 %>
+                    <%= link_to "#{@species.name} got away!", areas_path, class: "massive ui inverted red button" %>
+                <% else %>
+                    <% session[:continue] = true %>
+                    <%= link_to image_tag("pokeball.png", size: "125x125"), catch_path(@species) %>
+                    <div class="battle-text"><%= "#{@species.name} broke free! Try again" %> </div>
+                <% end %>
+
+                <br>
+                
+                <% if @flag != 2 %>
+                    <div class="leave-button"><%= link_to "Leave", areas_path, class: "ui grey massive button"  %></div>
+                <% end %>
+            <% else %>
+                <div id="already-owned"> You already have this Pokemon!!!!! </div>
+                <div class="leave-button"><%= link_to "Leave", areas_path, class: "ui grey massive button"  %></div>
+            <% end %>
+</div>
 <% else %>
 <%= image_tag 'https://i.imgur.com/Kh1PvgG.png', size: "2000x900" %>
 <%end%>
