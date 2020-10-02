@@ -1,0 +1,75 @@
+// Place all the styles related to the Species controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.species-show-page {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.species-show-page::before {
+    content: "";
+    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb2821a-1406-4a1d-9b04-6668f278e944/d841b5t-d14186ca-887a-4f10-b4ca-b16d5aaff49a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMmZiMjgyMWEtMTQwNi00YTFkLTliMDQtNjY2OGYyNzhlOTQ0XC9kODQxYjV0LWQxNDE4NmNhLTg4N2EtNGYxMC1iNGNhLWIxNmQ1YWFmZjQ5YS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.bZDnrcZ6EgEfh4g7QZRoWXDH0oeTdA5QmMWyMncMdX8') center no-repeat; 
+    background-size: cover; 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.species-sprite {
+    float: right;
+    padding-top: 2%;
+    margin-right: 20%;
+}
+
+#species-text {
+    float: left;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+
+#species-name {
+    font-size: 9rem;
+    // color: rgb(67, 200, 233);
+    color: white;
+    text-shadow: -3px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+}
+
+#species-type {
+    padding: 100px;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-shadow: -3px 0 rgb(67, 189, 226), 0 3px rgb(67, 189, 226), 1px 0 rgb(67, 189, 226), 0 -1px rgb(67, 189, 226);
+    // text-shadow: -3px 0 white, 0 3px white, 1px 0 white, 0 -1px white;
+}
+
+.species-battle-options {
+    bottom: 0;
+    position: fixed; 
+    margin-left: 48%;
+    margin-bottom: 55px;
+}
+
+.battle-text {
+    font-size: 4rem;
+    float: right;
+    margin-top: 50px;
+    margin-left: 10px;
+    color: rgb(233, 128, 67);
+    text-shadow: -3px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+}
+
+#already-owned {
+    font-size: 6rem;
+    margin-left: -500px;
+    color: rgb(216, 74, 74);
+    text-shadow: -3px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+    margin-bottom: 60px;
+}

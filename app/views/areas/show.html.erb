@@ -1,0 +1,42 @@
+<div class="area_show <%=@area.name%>">
+    <H1 id="area_name"><%= @area.name %></H1>
+
+
+    <div id="area_show_types">
+       <div id="area_type_word">
+            Types
+        </div>
+   
+        <ul>
+            <% @area.elements.uniq.each do |element| %>
+                <li class="area-type-list">
+                    <%= link_to element.name, element_path(element), target: "_blank", class: "ui blue big button" %>
+                </li>
+            <% end %>
+        </ul>
+    </div>
+    <p>
+        <% if @area.encounter_trigger %>
+            <% flash[:encounter] = @species.name %>
+
+            <div id="encounter-block">
+            <div class="ui center aligned grid animated list">
+            <div class="item">
+                <div class=""><%= link_to image_tag(@species.image_url, size: "400x400"), species_path(@species) %></div>
+                <div class="content">
+                <div class="header"><%= link_to "A wild #{@species.name} has appeared!", species_path(@species) %></div>
+            </div>
+            </div>
+         </div>   
+        
+        <% else %>
+        <div id="area_description">
+            <%= @area.description %>
+        </div>
+        <% end %>
+        
+    </p>
+    <br>
+
+    <div class="leave-button"><%= link_to "Leave", areas_path, class: "ui grey massive button" %></div>
+</div>

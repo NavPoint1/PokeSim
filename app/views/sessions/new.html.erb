@@ -1,0 +1,16 @@
+<h1>Login</h1>
+
+<p>First, what is your name? </p>
+<%= form_for(@trainer) do |f|%>
+<%= f.text_field :name%>
+<br>
+<%= f.label :password, "Password:" %>
+<br>
+<%= f.password_field :password %>
+<br>
+<%= f.submit "Login"%>
+<%end%>
+
+<br>
+
+<h6>Don't have an account? <%= link_to "Get Started!", home_path %></h6>

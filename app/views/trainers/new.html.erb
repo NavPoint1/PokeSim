@@ -1,0 +1,36 @@
+
+<div class="new-trainer">
+    <%= image_tag 'https://i.imgur.com/OQavlR3.png', size: "250x250", class: "oak-pic" %>
+
+    <div class="new-trainer-text">
+        <p>Oak : Hello there! Welcome to the world of POKEMON! My name is OAK! People call me the POKEMON PROF!</p>
+        <p>This world is inhabited by creatures called POKEMON! For some people, POKEMON are pets. Others use them for fights. </p>
+        <p>Myself...I study POKEMON as a profession.</p>
+    </div>
+    
+    <br>
+    <div id="new-trainer-form">
+    
+    <p id="first-what-is-your-name">First, what is your name? </p>
+    
+    <%= form_for(@trainer) do |f|%>
+        <%= f.text_field :name%>
+        <div id="new-trainer-errors"
+            <% if @trainer.errors %>
+            <ul>
+            <% @trainer.errors.full_messages.each do |error| %>
+                    <li><%= error %></li>
+                    <% end %>
+            </ul>
+            <% end %>
+        </div>
+        <br>
+        <div id="new-password-label"><%= f.label :password, "Password:" %></div>
+        <br>
+        <%= f.password_field :password %>
+        <br>
+        <%= f.submit "Next"%>
+        <%end%>
+    </div>
+
+</div>

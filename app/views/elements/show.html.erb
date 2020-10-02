@@ -1,0 +1,16 @@
+<div class="type-show-page">
+
+    <div class="type-show-title"><%= @element.name %></div>
+
+    <div class="type-show-text">Found in:</div>
+
+    <ul>
+        <% @element.areas.each do |area| %>
+            <li class="type-show-text">
+                <%= area.name %>
+            </li>
+        <% end %>
+    </ul>
+    <div class="type-show-text">Used by <%= @element.species.count %> pokemon.</div>
+
+</div>

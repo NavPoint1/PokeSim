@@ -1,0 +1,294 @@
+// Place all the styles related to the Areas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.area_show {
+    
+    height: 100%;
+}
+
+.Town {
+    background: url('https://i.imgur.com/PgysLy6.png') center no-repeat; 
+    background-size: cover;
+}
+
+.Volcano {
+    background: url('https://i.imgur.com/8BlibOo.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Beach {
+    background: url('https://i.imgur.com/SLHfCe3.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Power {
+    background: url('https://i.imgur.com/iMSJ4PB.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Jungle {
+    background: url('https://i.imgur.com/MR2SEGW.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Graveyard {
+    background: url('https://i.imgur.com/UN3Gr51.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Cave {
+    background: url('https://i.imgur.com/XoutaoK.jpg') center no-repeat; 
+    background-size: cover;
+}
+
+.Laboratory {
+    background: url('https://i.imgur.com/P5VoD5X.png') center no-repeat; 
+    background-size: cover;
+}
+
+#area_name {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    text-shadow: -3px 0 black, 0 3px black, 2px 0 black, 0 -2px black;
+}
+
+
+
+#area_index {
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#area_index::before {
+    content: "";
+    background: url('https://oldschoolgrappling.com/wp-content/uploads/2018/08/Background-opera-speeddials-community-web-simple-backgrounds.jpg') center no-repeat; 
+    background-size: cover; 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -2;
+    opacity: 70%;
+}
+
+.area-index-li {
+    padding: 12px;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+#area-under-pic-text {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#areas-prompt {
+    text-align: center;
+    margin-left: 5%;
+    padding-top: 1%;
+    margin-bottom: 2%;
+
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 4rem;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    letter-spacing: 3.6px;
+    word-spacing: 1px;
+    color: rgb(74, 185, 230);
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+#area-index-link-text {
+    font-size: 3rem;
+}
+
+
+
+
+#encounter-block {
+    bottom: 0;
+    margin-left: 40%;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    position: fixed;
+}
+
+
+.leave-button {
+    bottom: 0;
+    left: 0;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 2rem;
+    position: fixed;
+}
+
+#area_description {
+     text-align: center;
+     font-size: 3rem;
+     color: white;
+     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+     margin-top: 15%;
+}
+
+#area_type_word {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.area-type-list {
+    // display: inline; /* the default for span */
+    // width: 100px;
+    // height: 100px;
+    // padding: 5px;
+    // border: 1px solid blue;
+    // background-color: yellow; 
+    list-style-type: none;
+    padding: 5px;
+    display: inline;
+}
+
+#area_show_types {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 5%;
+    font-size: 3rem;
+     color: white;
+     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+     margin-bottom: 2%;
+}
+
+
+
+
+
+
+// #################################################
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    position: relative;
+    margin: 0 auto 1em;
+    padding: 1em 1em .25em 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 240px;
+    height: 4px;
+    margin-left: -120px;
+    content: '';
+    background-color: #fff;
+}
+
+/* Clip text element */
+.clip-text {
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: .25em;
+    padding: .5em .75em;
+    text-align: center;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: #000;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.75em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
+}
+
+.clip-text_one {
+    background-image: url(https://i.imgur.com/yugrgd7.jpg);
+    letter-spacing: 30px;
+    word-spacing: 1px;
+    font-size: 8rem;
+}
