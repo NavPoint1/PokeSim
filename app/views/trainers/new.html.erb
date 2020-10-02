@@ -15,15 +15,6 @@
     
     <%= form_for(@trainer) do |f|%>
         <%= f.text_field :name%>
-        <div id="new-trainer-errors"
-            <% if @trainer.errors %>
-            <ul>
-            <% @trainer.errors.full_messages.each do |error| %>
-                    <li><%= error %></li>
-                    <% end %>
-            </ul>
-            <% end %>
-        </div>
         <br>
         <div id="new-password-label"><%= f.label :password, "Password:" %></div>
         <br>
@@ -31,6 +22,15 @@
         <br>
         <%= f.submit "Next"%>
         <%end%>
+        <div id="new-trainer-errors"
+            <% if @trainer.errors %>
+            <ul>
+            <% @trainer.errors.full_messages.each do |error| %>
+                    <li id="new-trainer-error"><%= error %></li>
+                    <% end %>
+            </ul>
+            <% end %>
+        </div>
     </div>
 
 </div>

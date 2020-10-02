@@ -72,8 +72,14 @@
 
 #new-trainer-errors {
     float: right;
-    margin-right: 18%;
-    margin-top: -1.8%;
+    text-align: center;
+    margin-right: 10%;
+    margin-top: -10%;
+    list-style-type: none;
+}
+
+#new-trainer-error {
+    padding: 5px;
 }
 
 #new-trainer-form {
