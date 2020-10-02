@@ -268,6 +268,7 @@ Species.create(
     area: jungle,
     element: grass,
     capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
     rarity: 5,
     image_url: "bellsprout.png"
 )
