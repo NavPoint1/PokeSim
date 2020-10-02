@@ -29,6 +29,7 @@ grass = Element.create(name: "Grass")
 bug = Element.create(name: "Bug")
 ghost = Element.create(name: "Ghost")
 dragon = Element.create(name: "Dragon")
+ice = Element.create(name: "Ice")
 
 
 ###### Areas ######
@@ -99,12 +100,22 @@ FLEE_RATE = 15
 
 ### Beach ###
 Species.create(
+    name: "Shellder",
+    area: beach,
+    element: water,
+    capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
+    rarity: 5,
+    image_url: 'shellder.png'
+)
+
+Species.create(
     name: "Wartortle",
     area: beach,
     element: water,
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
-    rarity: 8,
+    rarity: 5,
     image_url: 'wartortle.png'
 )
 
@@ -116,6 +127,16 @@ Species.create(
     flee_rate: FLEE_RATE,
     rarity: 2,
     image_url: "https://i.imgur.com/g4JFNHP.png"
+)
+
+Species.create(
+    name: "Slowbro",
+    area: beach,
+    element: water,
+    capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
+    rarity: 2,
+    image_url: 'slowbro.png'
 )
 
 ### Town ###
@@ -166,8 +187,18 @@ Species.create(
     element: fire,
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
-    rarity: 8,
+    rarity: 10,
     image_url: "magmar.png"
+)
+
+Species.create(
+    name: "Rapidash",
+    area: volcano,
+    element: fire,
+    capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
+    rarity: 5,
+    image_url: "rapidash.png"
 )
 
 Species.create(
@@ -176,8 +207,18 @@ Species.create(
     element: rock,
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
-    rarity: 2,
+    rarity: 5,
     image_url: "golem.png"
+)
+
+Species.create(
+    name: "Moltres",
+    area: volcano,
+    element: fire,
+    capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
+    rarity: 1,
+    image_url: "moltres.png"
 )
 
 ### Power Plant ###
@@ -187,7 +228,7 @@ Species.create(
     element: electric,
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
-    rarity: 4,
+    rarity: 8,
     image_url: "pikachu.png"
 )
 
@@ -197,8 +238,22 @@ Species.create(
     element: poison,
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
-    rarity: 6,
-    image_url: "koffing.png"
+    area: power_plant,
+    element: poison,
+    capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
+    rarity: 5,
+    image_url: "muk.png"
+)
+
+Species.create(
+    name: "Zapdos",
+    area: power_plant,
+    element: electric,
+    capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
+    rarity: 1,
+    image_url: "zapdos.png"
 )
 
 ### Jungle ###
@@ -207,7 +262,6 @@ Species.create(
     area: jungle,
     element: grass,
     capture_rate: CAPTURE_RATE,
-    flee_rate: FLEE_RATE,
     rarity: 5,
     image_url: "bellsprout.png"
 )
@@ -218,11 +272,41 @@ Species.create(
     element: bug,
     capture_rate: 15,
     flee_rate: FLEE_RATE,
-    rarity: 5,
+    rarity: 4,
     image_url: "scyther.png"
 )
 
+Species.create(
+    name: "Beedrill",
+    area: jungle,
+    element: bug,
+    capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
+    rarity: 3,
+    image_url: "beedrill.png"
+)
+
+Species.create(
+    name: "Arbok",
+    area: jungle,
+    element: poison,
+    capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
+    rarity: 2,
+    image_url: "arbok.png"
+)
+
 ### Graveyard ###
+Species.create(
+    name: "Gastly",
+    area: graveyard,
+    element: ghost,
+    capture_rate: CAPTURE_RATE,
+    flee_rate: FLEE_RATE,
+    rarity: 12,
+    image_url: "gastly.png"
+)
+
 Species.create(
     name: "Haunter",
     area: graveyard,
@@ -239,7 +323,7 @@ Species.create(
     element: ghost,
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
-    rarity: 2,
+    rarity: 4,
     image_url: "gengar.png"
 )
 
@@ -270,8 +354,28 @@ Species.create(
     element: dragon,
     capture_rate: 15,
     flee_rate: FLEE_RATE,
-    rarity: 1,
+    rarity: 2,
     image_url: "dragonite.png"
+)
+
+Species.create(
+    name: "Aerodactyl",
+    area: cave,
+    element: rock,
+    capture_rate: 15,
+    flee_rate: FLEE_RATE,
+    rarity: 2,
+    image_url: "aerodactyl.png"
+)
+
+Species.create(
+    name: "Articuno",
+    area: cave,
+    element: ice,
+    capture_rate: 15,
+    flee_rate: FLEE_RATE,
+    rarity: 1,
+    image_url: "articuno.png"
 )
 
 ### Laboratory ###

@@ -26,9 +26,9 @@
             <%= collection_check_boxes(:trainer, :poke_ids, @trainer.pokes, :id, :name) do |poke| %>
                     <br>
                     <span class="pokemon_display">
-                        <span class="pitcher">
-                            <%= image_tag poke.object.species.image_url, size: "50x50" %>
-                        </span>
+                        
+                            <%= image_tag poke.object.species.image_url, size: "65x65", class: "pitcher" %>
+                        
                         <span class="pitcher_text">
                             <%= poke.label %> - <%= poke.object.element %>
                         </span>
