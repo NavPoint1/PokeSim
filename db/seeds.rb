@@ -238,6 +238,12 @@ Species.create(
     element: poison,
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
+    rarity: 12,
+    image_url: "koffing.png"
+)
+
+Species.create(
+    name: "Muk",
     area: power_plant,
     element: poison,
     capture_rate: CAPTURE_RATE,
