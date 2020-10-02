@@ -106,7 +106,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 5,
-    #image_url: 'shellder.png'
+    image_url: 'shellder.png'
 )
 
 Species.create(
@@ -136,7 +136,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    #image_url: 'slowbro.png'
+    image_url: 'slowbro.png'
 )
 
 ### Town ###
@@ -198,7 +198,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 5,
-    #image_url: "rapidash.png"
+    image_url: "rapidash.png"
 )
 
 Species.create(
@@ -218,7 +218,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 1,
-    #image_url: "moltres.png"
+    image_url: "moltres.png"
 )
 
 ### Power Plant ###
@@ -249,7 +249,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 5,
-    #image_url: "muk.png"
+    image_url: "muk.png"
 )
 
 Species.create(
@@ -259,7 +259,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 1,
-    #image_url: "zapdos.png"
+    image_url: "zapdos.png"
 )
 
 ### Jungle ###
@@ -290,7 +290,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 3,
-    #image_url: "beedrill.png"
+    image_url: "beedrill.png"
 )
 
 Species.create(
@@ -300,7 +300,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    #image_url: "arbok.png"
+    image_url: "arbok.png"
 )
 
 ### Graveyard ###
@@ -311,7 +311,7 @@ Species.create(
     capture_rate: CAPTURE_RATE,
     flee_rate: FLEE_RATE,
     rarity: 12,
-    #image_url: "gastly.png"
+    image_url: "gastly.png"
 )
 
 Species.create(
@@ -372,7 +372,7 @@ Species.create(
     capture_rate: 15,
     flee_rate: FLEE_RATE,
     rarity: 2,
-    #image_url: "aerodactyl.png"
+    image_url: "aerodactyl.png"
 )
 
 Species.create(
@@ -382,7 +382,7 @@ Species.create(
     capture_rate: 15,
     flee_rate: FLEE_RATE,
     rarity: 1,
-    #image_url: "articuno.png"
+    image_url: "articuno.png"
 )
 
 ### Laboratory ###
