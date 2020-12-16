@@ -44,7 +44,7 @@ Relations: <br/>
 * Authentication done with 'bcrypt' ruby gem
 * semantic ui for styling
 
-Setup
+## Setup
 $ bundle install (to download gems) <br/>
 $ rails db:create <br/>
 $ rails db:migrate <br/>
