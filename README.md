@@ -4,6 +4,10 @@ PokeSim is a project build with ruby on rails with an mvc design pattern
 
 PokeSim is a platform where a user can simulate the experience of catching and collecting Pokemon. A user can travel around the map, experiencing all of the different pokemon. In addition to that each pokemon has its own capture rate and flee rate so try to catch it before it runs away. Collect all of the pokemon in the game to win.
 
+## Deployed Site
+https://dry-caverns-45846.herokuapp.com/
+
+
 ## Features
 
 Traveling around 8 unique maps all housing approtiate Pokemon types based on the terrain. Each area has random number generators determining what species of pokemon you run into, or if you run into a pokemon at all. <br/>
