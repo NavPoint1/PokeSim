@@ -15,11 +15,11 @@ Traveling around 8 unique maps all housing approtiate Pokemon types based on the
 
 
 The battle screen where capturing takes place. Each species has its own capture rate as well as a flee rate using a random number generator. When you attempt to click the pokeball capture button the number generators check to see if you caught it, if not, it checks to see if it ran away. If neither of the numbers indicate this the process starts over and you can try again until one of these events happen. There are restrictions in place to make sure you can only catch one of each Pokemon. <br/>
-Capture: <br/>
+## Capture: <br/>
 ![capture experience capture](https://user-images.githubusercontent.com/69116393/102371785-8f796100-3f8c-11eb-8d27-cb9e95a969fe.gif)
 <br/>
 <br/>
-Flee: <br/> 
+## Flee: <br/> 
 ![capture experience flee2](https://user-images.githubusercontent.com/69116393/102372623-61e0e780-3f8d-11eb-9cec-a148dc29035e.gif)
 <br/>
 <br/>
@@ -30,7 +30,8 @@ Models include: <br/>
 * Species is the pokemon in general. This is "all of the pikachus" and "all of the mewtwos" this determines the capture rate and flee rate 
 * Poke is an individual Pokemon. A join table between Trainer and Species. This is "your pikachu" that you yourself captured 
 * Area houses all of the Species and is where the game logic happens. It has an encounter rate. 
-<br/>
+
+Relations: <br/>
 * Trainer has many Pokes and has many Species through Pokes
 * Species has many Pokes and has many Trainers through Pokes
 * Area has many Species
